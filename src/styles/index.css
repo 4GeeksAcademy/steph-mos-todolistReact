@@ -9,3 +9,61 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body { background-color: #f5f5f5;}
+
+h1{
+    font-size: 3.5rem;
+    color:#ebd9da;
+    padding: 5px;
+    font-family:'Helvetica Neue', sans-serif;
+
+}
+
+
+.todolist{
+    width: 600px;
+    height: inherit;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+input {
+    width: 500px;
+    outline: none;
+    background-color: transparent;
+    padding-right: 20px;
+    border: none;
+
+}
+
+
+.delete-button {
+    color: transparent;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.delete-button:hover {
+  color:red;
+}
+ul li {
+    list-style: none;
+    border: 1px solid rgb(219, 219, 219);
+    font-weight: normal;
+    color:gray;
+}
+
+p {
+font-size: medium;
+font-weight: lighter;
+color: gray;
+text-align: left;
+padding: 5px;
+}
