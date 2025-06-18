@@ -13,7 +13,7 @@ const Tasks = () => {
 
     function enterDone(e){
         if (e.key == 'Enter'){
-            setTasksList([...tasksList,newTask]);
+            setTasksList([...tasksList, newTask]);
             setNewTask('');
         }
 
@@ -34,14 +34,14 @@ const Tasks = () => {
             type="text"
             name="task" 
             placeholder="What needs to be done?" 
-            vale={newTask} 
+            value={newTask} 
             onChange={(e) => setNewTask(e.target.value)} 
             onKeyDown={enterDone} />
             
             <ul>
 
                 {tasksList.map((task, index) => 
-                <li className="items md-auto" key={index}>
+                <li className="items" key={index}>
                     <span>{task}</span>
                     <button className="delete-button" onClick={()=> deletTask(index)} >x</button>
                 </li>)}
